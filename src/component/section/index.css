@@ -9,6 +9,14 @@
     font-weight: bold;
     text-align: center;
     padding: 30px;
+    padding-top: 0px;
+}
+.top_bar .logo_container{
+    width: 300px;
+    margin: auto;
+}
+.top_bar .logo_container img {
+    width: 100%;
 }
 .video_container{
     background-color: black;
@@ -40,13 +48,50 @@
     font-weight: bold;
     padding: 20px;
     padding-bottom: 10px;
+
 }
 .bottom_bar span{
     margin-bottom: 11px;
+    cursor: pointer;
+
 }
 .bottom_bar .img_wrapper {
     width: 73px;
 }
 .bottom_bar .img_wrapper img {
+    cursor: pointer;
     width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+    .top_bar{
+        font-size: 38px;
+        padding: 30px;
+    }
+    .top_bar .logo_container{
+        width: 200px;
+        margin: auto;
+    }
+    .top_bar .logo_container img {
+        width: 100%;
+    }
+
+    .bottom_bar{
+        font-size: 30px;
+        padding-bottom: 10px;
+
+    }
+    .bottom_bar span{
+        margin-bottom: 8px;
+
+    }
+    .bottom_bar .img_wrapper {
+        width: 60px;
+    }
+    .bottom_bar .img_wrapper img {
+        width: 100%;
+    }
+
 }
