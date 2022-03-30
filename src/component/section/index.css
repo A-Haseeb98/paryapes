@@ -93,6 +93,11 @@
         padding-bottom: 30px;
         text-align: center;
     }
+    .top_bar_center{
+        width: 100%;
+        display: block;
+    }
+
     .top_bar .logo_container{
         width: 200px;
         margin: auto;
@@ -100,7 +105,9 @@
     .top_bar .logo_container img {
         width: 100%;
     }
-
+    .video_container{
+        border: none;
+    }
     .bottom_bar{
         font-size: 30px;
         padding-bottom: 10px;
