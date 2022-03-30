@@ -1,0 +1,52 @@
+.main_container{
+    background-color: black;
+    width: 100%;
+    color: white;
+    font-family:  Edo , Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.top_bar{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+.video_container{
+    background-color: black;
+    position: relative;
+}
+.video_container video{
+    width: 100%;
+}
+.volume_buttton{
+    position:absolute;
+    z-index: 2;
+    bottom: 2%;
+    right: 2%;
+}
+
+.icon_volume{
+    height: 4vh !important;
+    width: 4vh;
+}
+.volume_buttton svg {
+    color: white !important;
+}
+
+.bottom_bar{
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.bottom_bar span{
+    margin-bottom: 11px;
+}
+.bottom_bar .img_wrapper {
+    width: 73px;
+}
+.bottom_bar .img_wrapper img {
+    width: 100%;
+}
