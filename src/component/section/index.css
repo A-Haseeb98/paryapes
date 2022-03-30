@@ -7,13 +7,25 @@
 .top_bar{
     font-size: 60px;
     font-weight: bold;
-    text-align: center;
-    padding: 30px;
-    padding-top: 0px;
+    width: 100%;
+    /* text-align: center; */
+    padding: 0px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+.none {
+    width: 300px;
+    visibility: hidden;
+}
+
 .top_bar .logo_container{
     width: 300px;
-    margin: auto;
+    margin:0;
 }
 .top_bar .logo_container img {
     width: 100%;
@@ -64,11 +76,18 @@
 }
 
 
+
 @media screen and (max-width: 768px) {
   
+    .none {
+        width: 300px;
+        display: none   ;    }
     .top_bar{
+        display: block;
         font-size: 38px;
-        padding: 30px;
+        padding: 10px;
+        padding-bottom: 30px;
+        text-align: center;
     }
     .top_bar .logo_container{
         width: 200px;

@@ -4,15 +4,42 @@ import icon from '../../assets/WHITE.gif'
 import logo from '../../assets/logo.png'
 
 import { FiVolume2, FiVolumeX } from "react-icons/fi";
-import { useState } from 'react';
+import { useState, useEffect } from "react";
 import Typed from 'react-typed';
+import audio from '../../assets/audio.wav'
+
+
+const useAudio = url => {
+    const [audio] = useState(new Audio(url));
+    const [playing, setPlaying] = useState(false);
+
+    const toggle = () => setPlaying(!playing);
+
+    useEffect(() => {
+        playing ? audio.play() : audio.pause();
+    },
+        [playing]
+    );
+
+    useEffect(() => {
+        audio.addEventListener('ended', () => setPlaying(false));
+        return () => {
+            audio.removeEventListener('ended', () => setPlaying(false));
+        };
+    }, []);
+
+    return [playing, toggle];
+};
 
 
 function FirstSection() {
     const [volume, setVolume] = useState(false);
     const [visible, setVisible] = useState(true);
+    const [playing, toggle] = useAudio(audio);
+
     function handleVolume(sound) {
         setVolume(!sound);
+        toggle();
     }
     function handleVisibilty() {
         setVisible(visible);
@@ -22,7 +49,7 @@ function FirstSection() {
     return (
         <div className="main_container">
             <div className='top_bar'>
-           
+
                 <div className='logo_container'>
                     <img src={logo} alt='' />
                 </div>
@@ -32,6 +59,9 @@ function FirstSection() {
                     backSpeed={70}
                     loop
                 />
+
+                <div className='none'>
+                </div>
             </div>
             <div
                 className='video_container'
@@ -56,7 +86,7 @@ function FirstSection() {
                         )}
                     </span>
                 ) : null}
-                <video playsInline loop autoPlay='true' muted={!volume}>
+                <video preload='true' playsInline loop autoPlay='true' muted={!volume}>
                     <source src={video} type="video/mp4" />
                 </video>
             </div>
