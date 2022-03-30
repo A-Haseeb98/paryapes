@@ -49,19 +49,20 @@ function FirstSection() {
     return (
         <div className="main_container">
             <div className='top_bar'>
-
-                <div className='logo_container'>
-                    <img src={logo} alt='' />
-                </div>
-                <Typed
+                <div className='top_bar_center'>
+                    <div className='logo_container'>
+                        <img src={logo} alt='' />
+                    </div>
+                    <Typed
                     strings={['Coming Soon...']}
                     typeSpeed={60}
                     backSpeed={70}
                     loop
                 />
 
-                <div className='none'>
                 </div>
+
+
             </div>
             <div
                 className='video_container'
@@ -94,7 +95,7 @@ function FirstSection() {
                 <div className='img_wrapper' onClick={() => window.open('https://discord.link/PartyApesClub', '_blank')}>
                     <img src={icon} alt='' />
                 </div>
-                <span onClick={() => window.open('https://discord.link/PartyApesClub', '_blank')}>DISCORD</span>
+                <span onClick={() => window.open('https://discord.link/PartyApesClub', '_blank')}> VISIT OUR DISCORD</span>
             </div>
         </div>
     );
