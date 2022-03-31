@@ -119,6 +119,11 @@
         min-height: none;
         max-height: none
     }
+    .bottom_bar{
+        height: auto;
+        min-height: none;
+        max-height: none
+    }
 
 }
 
@@ -150,11 +155,13 @@
     }
     .bottom_bar{
         font-size: 30px;
-        padding-bottom: 10px;
+        padding-top: 10px;
 
     }
     .bottom_bar span{
         margin-bottom: 8px;
+        line-height: normal;
+
 
     }
     .bottom_bar .img_wrapper {
