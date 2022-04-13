@@ -2,7 +2,7 @@ import './index.css';
 import video from '../../assets/video.mp4'
 import icon from '../../assets/WHITE.gif'
 import logo from '../../assets/logo.png'
-
+import { FaInstagram, FaTwitter } from 'react-icons/fa'
 import { FiVolume2, FiVolumeX } from "react-icons/fi";
 import { useState, useEffect } from "react";
 import Typed from 'react-typed';
@@ -49,17 +49,24 @@ function FirstSection() {
     return (
         <div className="main_container">
             <div className='top_bar'>
+                <div className='display_none'>
+                 
+                </div>
                 <div className='top_bar_center'>
                     <div className='logo_container'>
                         <img src={logo} alt='' />
                     </div>
                     <Typed
-                    strings={['Coming Soon...']}
-                    typeSpeed={60}
-                    backSpeed={70}
-                    loop
-                />
+                        strings={['Coming Soon...']}
+                        typeSpeed={60}
+                        backSpeed={70}
+                        loop
+                    />
 
+                </div>
+                <div className='icons_container'>
+                    <span onClick={()=> window.open('https://www.instagram.com/partyapesclub/','_blank')}><FaInstagram /></span>
+                    <span onClick={()=> window.open('https://twitter.com/PartyApesClub','_blank')}><FaTwitter /></span>
                 </div>
 
 

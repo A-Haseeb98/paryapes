@@ -1,5 +1,6 @@
 {
   "name": "partyapps",
+  "homepage": "https://partyapesclub.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
