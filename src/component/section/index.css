@@ -1,3 +1,6 @@
+.icons_container_mob{
+    display: none;
+}
 .main_container {
     background-color: black;
     color: white;
@@ -17,16 +20,11 @@
     /* text-align: center; */
     padding: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 15%;
     min-height: 100px;
     max-height: 110px;
-}
-
-.display_none {
-    width: 160px;
-    height: 2px;
 }
 
 .top_bar_center {
@@ -46,25 +44,9 @@
     width: 100%;
 }
 
-.icons_container {
-    width: 160px;
-    text-align: right;
-    margin-top: -05px;
-    padding-right: 25px;
-}
 
-.icons_container span {
-    font-size: 35px;
-    margin-right: 12px;
-    cursor: pointer;
-    display: inline-block;
-    transition: all .2s ease-in-out;
-}
 
-.icons_container span:hover {
-    color: #51c7f1;
-    transform: scale(1.05);
-}
+
 
 
 .video_container {
@@ -77,8 +59,27 @@
     text-align: center;
     height: 75%;
     width: fit-content;
-
 }
+.icons_container {
+    padding-right: 5px;
+    position: absolute;
+    right: 0;
+    top: -65px;
+}
+
+.icons_container span {
+    font-size: 33px;
+    margin-right: 13px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+
+.icons_container span:hover {
+    color: #51c7f1;
+    transform: scale(1.05);
+}
+
 
 .video_container video {
     height: 100%;
@@ -129,48 +130,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 920px) {
-    .display_none{
-        display: none;
-    }   
-
-    .icons_container {
-        width: 100px;
-        text-align: right;
-        margin-top: -05px;
-        padding-right: 5px;
-    }
-
-    .icons_container span {
-        font-size: 30px;
-        margin-right: 12px;
-        cursor: pointer;
-        display: inline-block;
-        transition: all .2s ease-in-out;
-    }
-}
-
 @media screen and (max-width: 895px) {
-
-    .display_none{
-        display: none;
-    }
-
-    .icons_container {
-        width: 100px;
-        text-align: right;
-        margin-top: -05px;
-        padding-right: 5px;
-    }
-
-    .icons_container span {
-        font-size: 30px;
-        margin-right: 12px;
-        cursor: pointer;
-        display: inline-block;
-        transition: all .2s ease-in-out;
-    }
-
 
     .main_container {
         position: static;
@@ -197,8 +157,10 @@
 
     .top_bar {
         height: auto;
-        min-height: none;
-        max-height: none
+        justify-content: flex-start;
+        padding-left: 10px;
+        font-size: 50px;
+
     }
 
     .bottom_bar {
@@ -210,26 +172,42 @@
 }
 
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 748px) {
+    .display_none{
+        display: none;
+    }
+    .icons_container_mob{
+        display: block;
+    }
 
     .top_bar {
-        display: flex;
+        /* margin: 0 auto; */
+        display: block;
         flex-direction: column;
         font-size: 38px;
         padding: 10px;
         padding-bottom: 30px;
         text-align: center;
+        max-height: none
     }
 
     .top_bar_center {
+        margin: 0 auto;
         width: 100%;
         display: block;
     }
-    .icons_container {
+    .icons_container_mob {
       margin-top: 10px;
-
+      transform: translateX(13px);
     }
+    .icons_container_mob span{
+        font-size: 30px;
+        margin-right: 13px;
+        cursor: pointer;
+        display: inline-block;
+        transition: all .2s ease-in-out;
+    }
+
     .top_bar .logo_container {
         width: 200px;
         margin: auto;

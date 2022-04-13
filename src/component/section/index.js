@@ -4,6 +4,8 @@ import icon from '../../assets/WHITE.gif'
 import logo from '../../assets/logo.png'
 import { FaInstagram, FaTwitter } from 'react-icons/fa'
 import { FiVolume2, FiVolumeX } from "react-icons/fi";
+import { SiDiscord } from "react-icons/si";
+
 import { useState, useEffect } from "react";
 import Typed from 'react-typed';
 import audio from '../../assets/audio.wav'
@@ -49,9 +51,6 @@ function FirstSection() {
     return (
         <div className="main_container">
             <div className='top_bar'>
-                <div className='display_none'>
-                 
-                </div>
                 <div className='top_bar_center'>
                     <div className='logo_container'>
                         <img src={logo} alt='' />
@@ -64,9 +63,10 @@ function FirstSection() {
                     />
 
                 </div>
-                <div className='icons_container'>
-                    <span onClick={()=> window.open('https://www.instagram.com/partyapesclub/','_blank')}><FaInstagram /></span>
-                    <span onClick={()=> window.open('https://twitter.com/PartyApesClub','_blank')}><FaTwitter /></span>
+                <div className='icons_container_mob'>
+                    <span onClick={() => window.open('https://discord.com/invite/KpRpV8eYVX', '_blank')}><SiDiscord /></span>
+                    <span onClick={() => window.open('https://www.instagram.com/partyapesclub/', '_blank')}><FaInstagram /></span>
+                    <span onClick={() => window.open('https://twitter.com/PartyApesClub', '_blank')}><FaTwitter /></span>
                 </div>
 
 
@@ -76,7 +76,11 @@ function FirstSection() {
                 onMouseLeave={() => handleVisibilty(visible)}
                 onMouseEnter={() => handleVisibilty(visible)}
             >
-
+                <div className='icons_container display_none'>
+                    <span onClick={() => window.open('https://discord.com/invite/KpRpV8eYVX', '_blank')}><SiDiscord /></span>
+                    <span onClick={() => window.open('https://www.instagram.com/partyapesclub/', '_blank')}><FaInstagram /></span>
+                    <span onClick={() => window.open('https://twitter.com/PartyApesClub', '_blank')}><FaTwitter /></span>
+                </div>
                 {visible ? (
                     <span className="volume_buttton">
                         {volume ? (
