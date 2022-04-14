@@ -56,7 +56,7 @@ function FirstSection() {
                         <img src={logo} alt='' />
                     </div>
                     <Typed
-                        strings={['Coming Soon...']}
+                        strings={['Coming Soon']}
                         typeSpeed={60}
                         backSpeed={70}
                         loop
