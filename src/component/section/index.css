@@ -97,7 +97,7 @@
     color: white !important;
 }
 
-.bottom_bar {
+/* .bottom_bar {
     font-size: 36px;
     display: flex;
     justify-content: center;
@@ -123,7 +123,7 @@
 .bottom_bar .img_wrapper img {
     cursor: pointer;
     width: 100%;
-}
+} */
 
 @media screen and (max-width: 1000px) {
 
@@ -157,12 +157,12 @@
         font-size: 50px;
 
     }
-
+/* 
     .bottom_bar {
         height: auto;
         min-height: none;
         max-height: none
-    }
+    } */
 
 }
 
@@ -216,7 +216,7 @@
         border: none;
     }
 
-    .bottom_bar {
+    /* .bottom_bar {
         font-size: 30px;
         padding-top: 10px;
 
@@ -235,6 +235,6 @@
 
     .bottom_bar .img_wrapper img {
         width: 100%;
-    }
+    } */
 
 }

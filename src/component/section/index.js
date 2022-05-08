@@ -2,7 +2,7 @@ import './index.css';
 import video from '../../assets/video.mp4'
 import icon from '../../assets/WHITE.gif'
 import logo from '../../assets/logo.png'
-import { FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaInstagram, FaTwitter, FaTiktok } from 'react-icons/fa'
 import { FiVolume2, FiVolumeX } from "react-icons/fi";
 import { SiDiscord } from "react-icons/si";
 
@@ -64,9 +64,9 @@ function FirstSection() {
 
                 </div>
                 <div className='icons_container_mob'>
-                    <span onClick={() => window.open('https://discord.com/invite/KpRpV8eYVX', '_blank')}><SiDiscord /></span>
                     <span onClick={() => window.open('https://www.instagram.com/partyapesclub/', '_blank')}><FaInstagram /></span>
                     <span onClick={() => window.open('https://twitter.com/PartyApesClub', '_blank')}><FaTwitter /></span>
+                    <span onClick={() => window.open('https://www.tiktok.com/@partyapesclub', '_blank')}><SiDiscord /></span>
                 </div>
 
 
@@ -77,9 +77,10 @@ function FirstSection() {
                 onMouseEnter={() => handleVisibilty(visible)}
             >
                 <div className='icons_container display_none'>
-                    <span onClick={() => window.open('https://discord.com/invite/KpRpV8eYVX', '_blank')}><SiDiscord /></span>
                     <span onClick={() => window.open('https://www.instagram.com/partyapesclub/', '_blank')}><FaInstagram /></span>
                     <span onClick={() => window.open('https://twitter.com/PartyApesClub', '_blank')}><FaTwitter /></span>
+                    <span onClick={() => window.open('https://www.tiktok.com/@partyapesclub', '_blank')}><FaTiktok /></span>
+
                 </div>
                 {visible ? (
                     <span className="volume_buttton">
@@ -102,12 +103,12 @@ function FirstSection() {
                     <source src={video} type="video/mp4" />
                 </video>
             </div>
-            <div className='bottom_bar'>
+            {/* <div className='bottom_bar'>
                 <div className='img_wrapper' onClick={() => window.open('https://discord.link/PartyApesClub', '_blank')}>
                     <img src={icon} alt='' />
                 </div>
                 <span onClick={() => window.open('https://discord.link/PartyApesClub', '_blank')}> VISIT OUR DISCORD</span>
-            </div>
+            </div> */}
         </div>
     );
 }
