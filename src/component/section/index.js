@@ -66,7 +66,7 @@ function FirstSection() {
                 <div className='icons_container_mob'>
                     <span onClick={() => window.open('https://www.instagram.com/partyapesclub/', '_blank')}><FaInstagram /></span>
                     <span onClick={() => window.open('https://twitter.com/PartyApesClub', '_blank')}><FaTwitter /></span>
-                    <span onClick={() => window.open('https://www.tiktok.com/@partyapesclub', '_blank')}><SiDiscord /></span>
+                    <span onClick={() => window.open('https://www.tiktok.com/@partyapesclub', '_blank')}><FaTiktok /></span>
                 </div>
 
 
